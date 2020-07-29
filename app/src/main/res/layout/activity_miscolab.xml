@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".miscolab">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lista" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mapa" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="100dp">
+
+    <ListView
+        android:id="@+id/ListColab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    </FrameLayout>
+</LinearLayout>
